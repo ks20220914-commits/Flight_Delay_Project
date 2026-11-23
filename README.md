@@ -48,34 +48,62 @@ By leveraging 12 months of historical flight data, integrating real-time weather
 ## 🏗️ Project Architecture (CRISP-DM Framework)
 This project strictly follows the **CRISP-DM** methodology, covering all 6 phases from Business Understanding to Deployment.
 
-text
+
 Flight_Delay_Project/
+
 │
+
 ├── app/                  # Streamlit Application (UI & Logic)
+
+
 │   ├── streamlit_app.py  # Main Application Code
+
 │   └── style.css         # Custom Cyberpunk CSS Styling
+
 │
+
 ├── data/
+
 │   ├── raw/              # Raw CSVs (BTS 12 Months + Open-Meteo Weather)
+
+
+
 │   ├── interim/          # Merged, Cleaned, and Validated Data
+
 │   └── processed/        # Final Engineered Features (Ready for ML)
+
 │
+
 ├── models/               # Saved Trained Pipelines (.pkl)
+
 │
+
 ├── notebooks/            # Jupyter Notebooks for R&D
+
 │   ├── 03_eda.ipynb      # 30-Cell Advanced Exploratory Data Analysis
+
 │   ├── 04_modeling.ipynb # 18-Cell Optuna & SHAP Modeling
+
 │   └── 05_eval.ipynb     # Comprehensive Evaluation & Threshold Analysis
+
 │
+
 ├── scripts/              # Automated Data Pipeline Scripts
+
 │   ├── 01_fetch_weather.py
+
 │   ├── 02_merge_clean.py
+
 │   ├── 03_feature_engineering.py
+
 │   └── test_model.py     # Unit Tests for Model Validation
+
 │
+
 ├── requirements.txt      # Python Dependencies
+
 └── README.md
-`
+
 
 ---
 
