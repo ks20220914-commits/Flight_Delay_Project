@@ -1,0 +1,12 @@
+venv/
+pycache/
+*.pyc
+.ipynb_checkpoints/
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.json
+data/interim/*.csv
+data/processed/*.csv
+models/*.pkl
+notebooks/*.ipynb
+.env

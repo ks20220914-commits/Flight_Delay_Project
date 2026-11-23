@@ -1,0 +1,48 @@
+2026-11-18 04:40:31,741 - INFO - \U0001f680 Starting Weather Data Collection Process...
+2026-11-18 04:40:32,045 - INFO - \u2705 Airports data loaded and validated successfully.
+2026-11-18 04:40:32,738 - INFO - Found 334 unique origin airports.
+2026-11-18 04:40:32,739 - INFO - Progress: Fetching weather for ATL (1/334)
+2026-11-18 04:40:44,058 - INFO - Progress: Fetching weather for BOS (11/334)
+2026-11-18 04:40:52,777 - INFO - Progress: Fetching weather for RIC (21/334)
+2026-11-18 04:41:03,158 - INFO - Progress: Fetching weather for STL (31/334)
+2026-11-18 04:41:34,197 - INFO - Progress: Fetching weather for MLI (41/334)
+2026-11-18 04:41:47,096 - INFO - Progress: Fetching weather for ILM (51/334)
+2026-11-18 04:41:57,002 - INFO - Progress: Fetching weather for SGF (61/334)
+2026-11-18 04:42:09,937 - INFO - Progress: Fetching weather for VLD (71/334)
+2026-11-18 04:42:34,541 - INFO - Progress: Fetching weather for CWA (81/334)
+2026-11-18 04:42:46,022 - INFO - Progress: Fetching weather for BTV (91/334)
+2026-11-18 04:42:57,200 - INFO - Progress: Fetching weather for OKC (101/334)
+2026-11-18 04:43:05,858 - INFO - Progress: Fetching weather for MCO (111/334)
+2026-11-18 04:43:36,372 - INFO - Progress: Fetching weather for TUS (121/334)
+2026-11-18 04:43:38,354 - WARNING - \u26a0\ufe0f No coordinates found for PBI. Skipping.
+2026-11-18 04:43:45,274 - INFO - Progress: Fetching weather for DCA (131/334)
+2026-11-18 04:44:11,311 - INFO - Progress: Fetching weather for AVP (141/334)
+2026-11-18 04:44:25,014 - INFO - Progress: Fetching weather for ELP (151/334)
+2026-11-18 04:44:37,051 - INFO - Progress: Fetching weather for DAL (161/334)
+2026-11-18 04:44:55,487 - INFO - Progress: Fetching weather for ORH (171/334)
+2026-11-18 04:45:08,411 - INFO - Progress: Fetching weather for HOU (181/334)
+2026-11-18 04:45:18,978 - INFO - Progress: Fetching weather for GRI (191/334)
+2026-11-18 04:45:38,949 - INFO - Progress: Fetching weather for BLV (201/334)
+2026-11-18 04:45:48,159 - INFO - Progress: Fetching weather for MOT (211/334)
+2026-11-18 04:46:08,978 - INFO - Progress: Fetching weather for ABI (221/334)
+2026-11-18 04:46:21,882 - INFO - Progress: Fetching weather for LAW (231/334)
+2026-11-18 04:46:38,791 - INFO - Progress: Fetching weather for OTH (241/334)
+2026-11-18 04:47:03,014 - INFO - Progress: Fetching weather for HLN (251/334)
+2026-11-18 04:47:14,837 - INFO - Progress: Fetching weather for DVL (261/334)
+2026-11-18 04:47:28,563 - INFO - Progress: Fetching weather for SWO (271/334)
+2026-11-18 04:47:45,282 - INFO - Progress: Fetching weather for TXK (281/334)
+2026-11-18 04:47:59,349 - INFO - Progress: Fetching weather for CDC (291/334)
+2026-11-18 04:48:08,519 - INFO - Progress: Fetching weather for VEL (301/334)
+2026-11-18 04:48:22,030 - INFO - Progress: Fetching weather for VCT (311/334)
+2026-11-18 04:49:05,504 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=57.75&longitude=-152.4940033&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 04:49:14,248 - INFO - Progress: Fetching weather for SCC (321/334)
+2026-11-18 05:00:44,672 - WARNING - Retrying (Retry(total=8, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=70.19470215&longitude=-148.4649963&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:01:02,704 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=64.51219940185547&longitude=-165.44500732421875&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:01:20,486 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=66.88469696&longitude=-162.598999&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:01:47,908 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=56.80170059&longitude=-132.9450073&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:02:01,349 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=56.48429871&longitude=-132.3699951&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:02:18,624 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=71.285402&longitude=-156.766008&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:02:23,633 - INFO - Progress: Fetching weather for HGR (331/334)
+2026-11-18 05:02:35,151 - WARNING - Retrying (Retry(total=9, connect=3, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Read timed out. (read timeout=10)")': /v1/archive?latitude=51.883564&longitude=-176.642783&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Ccloud_cover&timezone=auto
+2026-11-18 05:02:41,803 - INFO - \U0001f4be Combining all weather data...
+2026-11-18 05:03:24,454 - INFO - \u2705 Successfully saved 2925072 rows to data/raw/all_weather_2024_full.csv

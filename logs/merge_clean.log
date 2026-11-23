@@ -1,0 +1,21 @@
+2026-11-18 05:17:19,231 - INFO - \U0001f680 Starting Master Merge Process...
+2026-11-18 05:17:19,235 - INFO - \U0001f4c2 Found 12 BTS files to process.
+2026-11-18 05:17:20,130 - INFO - \u2705 Loaded data/raw\bts_2024_01.csv successfully.
+2026-11-18 05:17:21,037 - INFO - \u2705 Loaded data/raw\bts_2024_02.csv successfully.
+2026-11-18 05:17:22,124 - INFO - \u2705 Loaded data/raw\bts_2024_03.csv successfully.
+2026-11-18 05:17:23,068 - INFO - \u2705 Loaded data/raw\bts_2024_04.csv successfully.
+2026-11-18 05:17:24,038 - INFO - \u2705 Loaded data/raw\bts_2024_05.csv successfully.
+2026-11-18 05:17:25,315 - INFO - \u2705 Loaded data/raw\bts_2024_06.csv successfully.
+2026-11-18 05:17:26,514 - INFO - \u2705 Loaded data/raw\bts_2024_07.csv successfully.
+2026-11-18 05:17:27,529 - INFO - \u2705 Loaded data/raw\bts_2024_08.csv successfully.
+2026-11-18 05:17:28,551 - INFO - \u2705 Loaded data/raw\bts_2024_09.csv successfully.
+2026-11-18 05:17:29,534 - INFO - \u2705 Loaded data/raw\bts_2024_10.csv successfully.
+2026-11-18 05:17:30,648 - INFO - \u2705 Loaded data/raw\bts_2024_11.csv successfully.
+2026-11-18 05:17:32,212 - INFO - \u2705 Loaded data/raw\bts_2024_12.csv successfully.
+2026-11-18 05:17:38,269 - INFO - \u2705 Combined BTS data shape: (7079081, 16)
+2026-11-18 05:17:39,775 - INFO - \u2705 Weather data loaded. Shape: (2925072, 8)
+2026-11-18 05:18:13,111 - INFO - \u2705 Merge completed successfully.
+2026-11-18 05:18:32,523 - INFO - Dropped 113814 cancelled/diverted flights.
+2026-11-18 05:18:32,639 - INFO - Dropped 0 rows with missing ARR_DELAY.
+2026-11-18 05:18:38,868 - WARNING - \u26a0\ufe0f Found 823 duplicate flights. Dropping...
+2026-11-18 05:23:30,859 - INFO - \U0001f389 Process Complete! Saved to data/interim/cleaned_flights_weather_12_months.csv. Final shape: (6964444, 25)
