@@ -15,5 +15,6 @@ plotly
 openpyxl
 pillow
 fpdf
+gdown
 
 

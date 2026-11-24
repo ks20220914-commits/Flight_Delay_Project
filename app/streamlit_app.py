@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import gdown
 import os
 import time
 import plotly.express as px
@@ -38,11 +39,25 @@ def load_model():
     # تحميل الموديل النهائي من مرحلة الـ Optuna
     return joblib.load(os.path.join("models", "final_xgb_model.pkl"))
 
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def load_data():
+    file_path = "data/processed/final_features_12_months.csv"
+    
+    # لو الملف مش موجود على سيرفر Streamlit، ننزله من جوجل درايف
+    if not os.path.exists(file_path):
+        with st.spinner("⏳ Downloading Dataset (1GB) from Google Drive... This might take a few minutes."):
+            # الـ ID اللي طلع من اللينك بتاعك
+            file_id = "1Mr7iGjYgr0_53npDljGSbFjMY6TvdKZJ"
+            url = f"https://drive.google.com/uc?id={file_id}"
+            
+            os.makedirs("data/processed", exist_ok=True)
+            
+            # تحميل الملف باستخدام gdown
+            gdown.download(url, file_path, quiet=False)
+            
     cols = ['OP_UNIQUE_CARRIER', 'ORIGIN', 'DEST', 'is_delayed', 'dep_hour', 'precipitation', 
             'prev_arr_delay', 'turnaround_time', 'temperature_2m', 'wind_speed_10m', 'DISTANCE']
-    return pd.read_csv("data/processed/final_features_12_months.csv", usecols=cols)
+    return pd.read_csv(file_path, usecols=cols)
 
 model = load_model()
 df = load_data()
