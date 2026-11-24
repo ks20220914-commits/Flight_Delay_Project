@@ -14,4 +14,10 @@ ipykernel
 plotly
 openpyxl
 pillow
+<<<<<<< HEAD
 fpdf
+=======
+fpdf
+>>>>>>> fa810bc1a465c9866af296a368e03b1cf95e9fe8
+
+
