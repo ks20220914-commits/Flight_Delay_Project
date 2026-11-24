@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import gdown
+import zipfile
 import os
 import time
 import plotly.express as px
@@ -41,23 +42,33 @@ def load_model():
 
 @st.cache_data(show_spinner=False)
 def load_data():
-    file_path = "data/processed/final_features_12_months.csv"
+    zip_path = "data/processed/dataset.zip"
+    csv_path = "data/processed/final_features_12_months.csv"
     
-    # لو الملف مش موجود على سيرفر Streamlit، ننزله من جوجل درايف
-    if not os.path.exists(file_path):
-        with st.spinner("⏳ Downloading Dataset (1GB) from Google Drive... This might take a few minutes."):
-            # الـ ID اللي طلع من اللينك بتاعك
+    # لو ملف الـ CSV مش موجود، هننزل الـ ZIP ونفك ضغطه
+    if not os.path.exists(csv_path):
+        with st.spinner("⏳ Downloading & Extracting Dataset from Google Drive... This might take a few minutes."):
+            # اللينك المعدل عشان يتخطى تحذير جوجل درايف
             file_id = "1Mr7iGjYgr0_53npDljGSbFjMY6TvdKZJ"
-            url = f"https://drive.google.com/uc?id={file_id}"
+            url = f"https://drive.google.com/uc?export=download&id={file_id}"
             
             os.makedirs("data/processed", exist_ok=True)
             
-            # تحميل الملف باستخدام gdown
-            gdown.download(url, file_path, quiet=False)
+            # تحميل ملف الـ ZIP
+            gdown.download(url, zip_path, quiet=False)
+            
+            # فك ضغط الملف
+            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                zip_ref.extractall("data/processed/")
+                
+            # بعد فك الضغط، ممكن نمسح ملف الـ ZIP عشان نوفر مساحة
+            os.remove(zip_path)
             
     cols = ['OP_UNIQUE_CARRIER', 'ORIGIN', 'DEST', 'is_delayed', 'dep_hour', 'precipitation', 
             'prev_arr_delay', 'turnaround_time', 'temperature_2m', 'wind_speed_10m', 'DISTANCE']
-    return pd.read_csv(file_path, usecols=cols)
+    
+    # بنقرا الملف اللي طلع بعد فك الضغط
+    return pd.read_csv(csv_path, usecols=cols)
 
 model = load_model()
 df = load_data()
