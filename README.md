@@ -8,7 +8,7 @@
 
 **Developed by:** [Kyrillos Saeed](https://www.linkedin.com/in/kyrillos-saeed)  
 **Portfolio:** [Kyrillos Saeed Portfolio](https://ks20220914-commits.github.io/Kyrillos-Saeed.github.io/)  
-**Live Application:** [Insert your Streamlit Cloud Link Here]
+**Live Application:** [https://flightdelayproject-qp3nzs3yzl2shcv7sek926.streamlit.app/]
 
 ---
 
